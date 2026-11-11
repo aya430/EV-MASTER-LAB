@@ -1,0 +1,13 @@
+# Optional: Render.com blueprint for the Python reference API (the GitHub Pages site does NOT need it).
+services:
+  - type: web
+    name: ev-master-lab-api
+    runtime: python
+    plan: free
+    rootDir: backend/python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: "*"

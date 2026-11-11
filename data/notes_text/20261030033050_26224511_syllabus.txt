@@ -1,0 +1,217 @@
+          Course Title Electric Vehicle System Engineering                 Course Type                               PE-2
+          Course Code B24EES502           Credit              3                Class                              V Semester
+               CI Hours / Sem         LI Hours/Sem TW, SL in Hours / Sem
+                                                                         Total Hours /                          Total Credits
+               L              T              P               SL          Sem
+               42                 0               0                    48                     90                      3
+
+
+COURSE OVERVIEW
+         Electric Vehicle System Engineering program at REVA University, a uniquely industry-driven course, fully immersing
+         students in hands-on learning experiences. With an academic MATLAB license (No. 41185143) at their disposal,
+         students will undertake initial simulations in our cutting-edge Simulation Lab, designed to provide a practical
+         foundation in electric vehicle systems. What sets our program apart is the collaboration with Bosch Pvt Ltd, where
+         industry experts will actively engage with our students, bridging the divide between academia and real-world
+         application. These experts will not on
+
+
+
+
+           enrich the learning experience but also guide students in successfully completing their course assignments, ensuring
+           that they are well-prepared for the challenges and opportunities in the electric vehicle industry.
+
+
+COURSE OBJECTIVE
+
+
+               1.    To present a comprehensive overview of Electric Vehicles
+               2.    To enable students to know the characteristics of various types of energy storage devices .
+               3.    To present a comprehensive overview of Power Electronics and Electric Drive Train Systems.
+               4.    To equip students with basic concepts to practically design/ implement and modify the existing vehicle to
+                     electric vehicle
+
+
+COURSE OUTCOMES (COs)
+
+
+           After the completion of the course, the student will be able to:
+
+
+
+                CO#                                    Course Outcomes                                    POs             PSOs
+              CO-1       Describe the configuration of a typical electric vehicle, and design , develop   1-6              1,2
+                         basic a schemes of electric vehicle
+              CO-2       Choose proper energy storage systems for vehicle applications and                1-3,6            1,2
+                         develop strategies for charging various types of batteries.
+              CO-3       Understand the Power Electronics and Electric Drive Train Systems                1,3,4            1,2
+                         quadrant wise.
+              CO-4        Execute the Modeling of Vehicle Control Strategy                                1,3,4            1,2
+
+BLOOM’S LEVEL OF THE COURSE OUTCOMES
+                                                                            Bloom’s Level
+                     CO#
+                                   Remembe          Understan       Appl                 Analyze          Evaluate           Create
+                                     r (L1)            d (L2)        y                    (L4)              (L5)              (L6)
+                                                                     (L3)
+                  CO-1
+                                                        √
+                  CO-2                                                                      √
+                                                                        √
+                  CO-3                                  √
+
+                  CO-4                                  √               √                                                          √
+
+
+
+
+            COURSE ARTICULATION MATRIX
+
+
+
+
+                                                                                                                                   PSO3
+                                                                                                   PO10
+
+                                                                                                            PO11
+                   CO#/
+
+
+
+
+                                                                                                                     PSO1
+
+                                                                                                                            PSO2
+                              PO1
+
+                                      PO2
+
+                                              PO3
+
+                                                      PO4
+
+                                                            PO5
+
+                                                                  PO6
+
+                                                                             PO7
+
+                                                                                   PO8
+
+                                                                                            PO9
+                    POs
+
+                  CO-1         2       1               1                                                              2      2
+
+                  CO-2         3       1      2                   1                                                   2      2
+
+                  CO-3         3              2        1                                                              2      2
+
+                  CO-4         3              2        1                                                              2      2
+
+
+
+            Note: 1-Low, 2-Medium, 3-High
+COURSE CONTENTS THEORY
+
+
+
+Unit 1: Introduction to Electric Vehicles
+              Introduction to EVs, Configuration of EVs, Performance of EVs, Energy Flow Analysis, Introduction to Traction
+              Batteries. Drive cycle and its importance in system analysis. Component selection for a given drive cycle for a
+              BEV. Three Phase Inverter, VSI, PWM Techniques- Space Vector PWM- Hysteresis Control, Comparison of PWM
+              techniques
+Module 2: Energy Storage System
+
+             Ragone plot, Battery Types and battery pack, Basic battery operation, Battery
+      Chemistry -Li Ion, Electric Vehicle Battery Efficiency and Effects on Performance,
+      Calculation of Electric Vehicle Battery Capacity, SoC and SoH estimation,
+      Governing equations and Waveforms, Battery parameters and comparisons, BEV –
+      battery sizing, Modelling of Battery
+            -RC equivalent network Model, Concept of cell balancing, Basic battery
+      management systems. Battery Chargers- Basic requirements for charging
+      systems, Classification of Charging Architectures, Charging Controls, Current
+      Regulations, charging standards and technologies.
+
+
+Unit 3: Introduction to Power Electronics and Electric Drive Train Systems
+            Power Electronic Converters for Electric and Hybrid Vehicles, Electric
+      Vehicle Charger Topologies, Electric Drive train Overview, Systems with Linear
+      Motion and Rotating Systems, Types of loads, Four Quadrant Operation, Induction
+      Motor for EV power train - Steady State Analysis of Induction Drive, Direct & Indirect
+      Vector Control, Field Oriented Control, Machine Model with Leakage Inductance.
+      Permanent magnet synchronous machine for EV power train, Non-Salient & Salient
+      Drives, Generic Model, Steady State Analysis, Field Oriented Control.
+
+
+
+
+                Unit 4: EV Modelling & Simulation
+
+            Modeling of BEV-Forward looking Model-Driver Perspective, Backward
+      Looking Model Drive Cycle Perspective, Modelling of Driver, Modeling of Brake
+      Control Unit/Regenerative braking , Modeling of Vehicle Control Strategy, Modeling
+      of Vehicle Chassis Sizing of Components- Steady State Energy Balance Equation,
+      Modeling of Battery/Cell, Powertrain Dimensioning Peak vs Continuous
+      performance, Type of Drive cycles, Types of Control Strategy, Analysis
+      Performance, Range, Consumption Prediction.
+
+
+TEXT BOOKS:
+                      1.      C.C. Chan and K.T. Chau, Modern Electric Vehicle Technology, London:
+               Oxford University Press
+                      2.      Iqbal Husain, Electric and Hybrid Vehicles: Design Fundamentals, New
+               York: RC Press.
+                      3.      M. Ehsani, Y. Gao, S .E. Gay and A. Emadi, Modern Electric, Hybrid
+               Electric, and Fuel Cell Vehicles:
+
+
+Reference Books:
+          1.     Electric Vehicle Technology Explained, 2e, James Larminie, Oxford
+                 Brooks University John Lowry, Acenti Designs Ltd John Wiley & Sons,
+                 Inc., 2012, ISBN: 978-1-119-94273-3
+          2.     Analysis and Control of Electric Drives: Simulations and Laboratory
+                 Implementation, Ned Mohan, University of Minnesota, Siddharth Raju,
+                 University of Minnesota, John Wiley & Sons, Inc., 2020 ISBN:
+
+
+                                                3
+                     9781119584537
+                3.   Electric Motor Control: DC, AC, and BLDC Motors, Sang-Hoon Kim,
+                     Kangwon National University Elsevier Science, 2017ISBN:
+                     9780128121382
+                4.   Renewable Energy Systems: Simulation with Simulink and Simscape
+                     Electrical Viktor Perelmuter, National Technical University (Kharkov
+                     Polytechnic Institute) CRC Press, Inc., 2017 ISBN: 978-1- 4987-6598-5
+                5.   Modern Electric, Hybrid Electric, and Fuel Cell Vehicles, 3e Mehrdad
+                     Ehsani, Texas A&M University; Yimin Gao, Texas A&M University; Stefano
+                     Longo, Cranfield University; Kambiz M Ebrahimi, Loughborough
+                     University CRC Press, Inc., 2018 ISBN: 9781498761772
+                6.   Battery Management Systems, Volume II: Equivalent-Circuit Methods,
+                     Gregory L. Plett, Publisher: Artech House, Year: 2020 ISBN:
+                     1630810274,9781630810276
+                7.   Fundamentals of Power Electronics, Robert W Erickson,
+                     Dragon Maksimovic, Springer, ISBN-10:8181283635,
+                     ISBN-13: 978-8181283634
+                8.   Power Electronics: Converters, Applications and Design, Ned Mohan, Tore M.
+                     Undeland, and William
+                     P. Robbins , Wiley, ISBN-10: 9788126510900, ISBN-13: 978-8126510900
+
+Journals/Magazines
+
+
+                1. www.myev.com
+                2. www.batteryuniversity.com
+                3. www.insideevs.com
+
+SWAYAM/NPTEL/MOOCs:
+           1. https://online-learning.tudelft.nl/courses/electric-cars-introduction/
+           2. https://www.mooc-list.com/course/hybrid-vehicles-edx
+           3. https://www.mooc-list.com/course/electric-cars-introduction-edx
+           4. https://www.coursera.org/learn/electric-vehicles-mobility
+           5. https://www.udemy.com/course/electric-vehicle-certificate-course/
+
+
+
+
+                                                   4
+

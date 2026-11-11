@@ -1,0 +1,15 @@
+{
+  "name": "ev-master-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EV MASTER LAB – Electric Vehicle System Engineering Virtual Laboratory (B24EES502), REVA University. Developed by Dr Bansilal Bairwa.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build_site.mjs",
+    "serve": "python3 -m http.server 8080",
+    "preview": "python3 -m http.server 8080 --directory dist"
+  },
+  "author": "Dr Bansilal Bairwa, Assistant Professor, REVA University, Bengaluru",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=18" }
+}

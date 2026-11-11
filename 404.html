@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EV MASTER LAB – redirecting…</title>
+<script>
+// GitHub Pages SPA fallback: the app uses hash routes (#/exp/1.1). Any unknown deep path such as
+// /<repo>/exp/1.1 or /<repo>/notes/2 is converted to the matching hash route and sent to index.html.
+(function () {
+  var parts = location.pathname.split('/').filter(Boolean);
+  var isProjectSite = /\.github\.io$/.test(location.hostname) && parts.length > 0;
+  var base = isProjectSite ? '/' + parts.shift() + '/' : '/';
+  var rest = parts.join('/').replace(/index\.html$/, '');
+  var hash = location.hash || (rest ? '#/' + rest : '#/home');
+  location.replace(base + 'index.html' + location.search + hash);
+})();
+</script>
+</head>
+<body style="background:#0b1324;color:#e6ecf7;font-family:system-ui;padding:40px">
+Redirecting to <a style="color:#22d3ee" href="./index.html">EV MASTER LAB</a>…
+</body>
+</html>
