@@ -1,0 +1,85 @@
+name: Build and deploy EV MASTER LAB to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # only used by the one-time import job (unpacks ev-master-lab-source.zip if present)
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # One-time bootstrap: the project was first uploaded through the GitHub web UI as a single zip
+  # (folder structure preserved). This job unpacks it into the repository and commits the files.
+  # When no zip is present (every normal push) it does nothing.
+  import:
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: commit
+        run: |
+          if [ -f ev-master-lab-source.zip ]; then
+            unzip -o -q ev-master-lab-source.zip -d .
+            git rm -q ev-master-lab-source.zip
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -q -m "Import EV MASTER LAB project files from uploaded archive"
+            git push origin HEAD:main
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: import
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.import.outputs.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build production site (verifies imports, assets, JSON, PDFs)
+        run: npm run build
+        env:
+          EV_API_URL: ${{ vars.EV_API_URL }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  backend-tests:
+    needs: import
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.import.outputs.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify Python reference models against worked examples
+        working-directory: backend/python
+        run: |
+          pip install -r requirements.txt
+          pytest -q
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
